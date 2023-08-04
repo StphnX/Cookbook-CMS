@@ -19,8 +19,8 @@ function App() {
       <h1>{recipe[0].name}</h1>
       <img className="pic" src={recipe[0].img} />
       <p>{recipe[0].description} /</p>
-      {recipe[0].ingredients.map((item) => {
-        return <p>{item}</p>;
+      {recipe[0].ingredients.map((item, index) => {
+        return <p key={index}>{item}</p>;
       })}
     </>
   );
