@@ -13,6 +13,7 @@ const Contentful = () => {
         content_type: 'cookbook',
         select: 'fields',
       });
+      console.log(entries);
       const saniEntries = entries.items.map((item) => {
         const name = item.fields.name;
         const description = item.fields.description;
